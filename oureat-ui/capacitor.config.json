@@ -1,0 +1,6 @@
+{
+  "appId": "com.yibo.oureat",
+  "appName": "oureat",
+  "webDir": "dist",
+  "bundledWebRuntime": false
+}

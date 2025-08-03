@@ -1,0 +1,27 @@
+{
+  "name": "oureat-poc",
+  "version": "1.0.0",
+  "description": "这是 RWCO 项目的第一个最小可行产品（PoC），模拟外卖拼单 → 履约 → 完成 → 发奖励的链上完整流程。",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs",
+    "test": "test"
+  },
+  "scripts": {
+    "test": "npx hardhat test"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@nomicfoundation/hardhat-network-helpers": "^1.1.0",
+    "@nomicfoundation/hardhat-toolbox": "^6.1.0",
+    "chai": "^4.5.0",
+    "dotenv": "^17.2.0",
+    "hardhat": "^2.26.1"
+  },
+  "dependencies": {
+    "@openzeppelin/contracts": "^4.9.3",
+    "ethers": "^6.15.0"
+  }
+}
