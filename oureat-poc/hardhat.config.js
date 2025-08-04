@@ -10,16 +10,13 @@ module.exports = {
     },
   },
   networks: {
-    // 内置的 Hardhat 本地网络
-    hardhat: {
-      chainId: 31337,
-    },
-    // 本地节点（如果你用 `npx hardhat node` 启动了一个独立进程）
-    localhost: {
-      url: "http://127.0.0.1:8545",
-      chainId: 31337,
-    },
-    // 已移除 Sepolia 配置，只保留本地测试
+    hardhat: { chainId: 31337 },
+    localhost: { url: "http://127.0.0.1:8545", chainId: 31337 },
+    sepolia: {
+      url: process.env.SEPOLIA_RPC_URL,
+      accounts: process.env.SEPOLIA_PRIVATE_KEY ? [process.env.SEPOLIA_PRIVATE_KEY] : [],
+      chainId: 11155111,
+    }
   },
   paths: {
     sources: "./contracts",
